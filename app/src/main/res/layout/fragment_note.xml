@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:paddingLeft="10dp"
+                  android:paddingTop="10dp"
+                  android:paddingRight="10dp"
+                  android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/et_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="开始你的日记吧"
+            android:textColorHint="#bdbdbd"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/im_weather"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_wb_sunny_grey_500_18dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多云"
+                android:layout_toRightOf="@+id/im_weather"
+                android:layout_alignTop="@+id/im_weather"
+                android:textSize="10sp"
+                android:layout_marginStart="6dp"
+                />
+
+            <ImageView
+                android:id="@+id/im_location2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_location_on_grey_500_18dp"
+                android:layout_below="@+id/im_weather"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扬州大学"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/im_location2"
+                android:layout_alignTop="@+id/im_location2"
+                android:layout_marginStart="6dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
